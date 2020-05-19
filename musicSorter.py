@@ -41,5 +41,13 @@ for song in songdir:
         os.mkdir(check2)
     except OSError:
         pass
-    shutil.move(song, check2)
+    if sys.argv[3] == 0:
+        shutil.move(song, check2)
+    else:
+        shutil.copy(song, check2)
+
+
 print("Success")
+if sys.argv[3] == "0":
+    print("Remove {} folder".format(sys.argv[1].split("/")[-1]))
+    shutil.rmtree(sys.argv[1])

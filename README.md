@@ -11,6 +11,11 @@ pip install -r requirements.txt
 # How to use
 
 ```
-python3 MusicSorter.py <DIR_source> <DIR_destination>
+
+python3 MusicSorter.py <DIR_source> <DIR_destination> <options>
+
+options:
+0 = move songs
+1 = copy songs
 
 ```
